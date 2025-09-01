@@ -1,0 +1,21 @@
+version: 2
+sources:
+  - name: raw
+    tables:
+      - name: raw_clicks
+
+models:
+  - name: stg_clicks
+    columns:
+      - name: event_id
+        tests: [not_null]
+      - name: customer_id
+        tests: [not_null]
+  - name: fct_sessions
+    columns:
+      - name: session_id
+        tests: [not_null]
+      - name: converted
+        tests:
+          - accepted_values:
+              values: [0,1]
