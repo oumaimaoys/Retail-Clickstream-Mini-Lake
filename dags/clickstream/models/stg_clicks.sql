@@ -10,4 +10,4 @@ select
   geo_city,
   event_ts,
   dt
-from {{ source('raw','raw_clicks') }}
+from {{ source('staging_raw','raw_clicks') }}

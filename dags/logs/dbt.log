@@ -1,0 +1,65 @@
+[0m23:51:59.696812 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a7b0121fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a7b13fe510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a7adbecce0>]}
+
+
+============================== 23:51:59.736587 | 664d3187-afde-4dd5-974a-ad86c709eb08 ==============================
+[0m23:51:59.736587 [info ] [MainThread]: Running with dbt=1.10.10
+[0m23:51:59.737126 [debug] [MainThread]: running dbt with arguments {'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/astro/.dbt', 'target_path': 'None', 'indirect_selection': 'eager', 'warn_error': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'use_experimental_parser': 'False', 'quiet': 'False', 'log_path': 'logs', 'write_json': 'True', 'empty': 'None', 'static_parser': 'True', 'partial_parse': 'True', 'version_check': 'True', 'use_colors': 'True', 'log_format': 'default', 'no_print': 'None', 'invocation_command': 'dbt init clickstream', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'printer_width': '80'}
+[0m23:51:59.757254 [info ] [MainThread]: Creating dbt configuration folder at /home/astro/.dbt
+[0m23:51:59.763755 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.12/site-packages/dbt/include/starter_project
+[0m23:51:59.769702 [info ] [MainThread]: 
+Your new dbt project "clickstream" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:51:59.770139 [info ] [MainThread]: Setting up your profile.
+[0m23:53:13.691497 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m23:53:13.692022 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m23:54:56.028999 [info ] [MainThread]: Profile clickstream written to /home/astro/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m23:54:56.031554 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 176.3892, "process_in_blocks": "44560", "process_kernel_time": 0.269751, "process_mem_max_rss": "122416", "process_out_blocks": "88", "process_user_time": 2.593221}
+[0m23:54:56.032749 [debug] [MainThread]: Command `dbt init` succeeded at 23:54:56.032501 after 176.39 seconds
+[0m23:54:56.033737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a7b1aa7380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a7ad3e4920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77a7ae4bc8c0>]}
+[0m23:54:56.034722 [debug] [MainThread]: Flushing usage events
+[0m23:54:58.087642 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:57:21.261192 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e28d4151f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e28cdb6a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e28dad0e00>]}
+
+
+============================== 23:57:21.298494 | 55b84fc6-d7b4-4521-a9a5-ed3a53603a42 ==============================
+[0m23:57:21.298494 [info ] [MainThread]: Running with dbt=1.10.10
+[0m23:57:21.299058 [debug] [MainThread]: running dbt with arguments {'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'debug': 'False', 'no_print': 'None', 'use_colors': 'True', 'static_parser': 'True', 'log_path': 'logs', 'empty': 'None', 'profiles_dir': '/home/astro/.dbt', 'log_cache_events': 'False', 'cache_selected_only': 'False', 'partial_parse': 'True', 'target_path': 'None', 'fail_fast': 'False', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'printer_width': '80', 'quiet': 'False', 'version_check': 'True', 'indirect_selection': 'eager', 'introspect': 'True', 'write_json': 'True', 'invocation_command': 'dbt init clickstream', 'warn_error': 'None', 'use_experimental_parser': 'False'}
+[0m23:57:21.320646 [debug] [MainThread]: Starter project path: /usr/local/lib/python3.12/site-packages/dbt/include/starter_project
+[0m23:57:21.323059 [info ] [MainThread]: 
+Your new dbt project "clickstream" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m23:57:21.323458 [info ] [MainThread]: Setting up your profile.
+[0m23:57:42.014871 [debug] [MainThread]: Redshift adapter: Setting redshift_connector to ERROR
+[0m23:57:42.015376 [debug] [MainThread]: Redshift adapter: Setting redshift_connector.core to ERROR
+[0m23:58:29.413440 [info ] [MainThread]: Profile clickstream written to /home/astro/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m23:58:29.416006 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 68.20562, "process_in_blocks": "0", "process_kernel_time": 0.21338, "process_mem_max_rss": "122792", "process_out_blocks": "96", "process_user_time": 2.542619}
+[0m23:58:29.417189 [debug] [MainThread]: Command `dbt init` succeeded at 23:58:29.416963 after 68.21 seconds
+[0m23:58:29.418116 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e28d426a20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e28c252030>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x72e28c779b50>]}
+[0m23:58:29.419109 [debug] [MainThread]: Flushing usage events
+[0m23:58:30.665241 [debug] [MainThread]: An error was encountered while trying to flush usage events

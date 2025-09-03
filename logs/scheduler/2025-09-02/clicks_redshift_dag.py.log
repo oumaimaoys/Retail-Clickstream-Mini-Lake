@@ -1,0 +1,448 @@
+[2025-09-02T16:13:00.943+0000] {processor.py:157} INFO - Started process (PID=38) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:13:00.944+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:13:00.944+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:13:00.944+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:13:00.950+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:13:00.948+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:13:00.951+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:13:00.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.037 seconds
+[2025-09-02T16:13:31.668+0000] {processor.py:157} INFO - Started process (PID=98) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:13:31.670+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:13:31.671+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:13:31.671+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:13:31.676+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:13:31.674+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:13:31.676+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:13:31.701+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.038 seconds
+[2025-09-02T16:14:02.163+0000] {processor.py:157} INFO - Started process (PID=159) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:14:02.165+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:14:02.169+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:14:02.168+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:14:02.198+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:14:02.191+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:14:02.199+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:14:02.255+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.116 seconds
+[2025-09-02T16:14:32.883+0000] {processor.py:157} INFO - Started process (PID=219) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:14:32.885+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:14:32.887+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:14:32.887+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:14:32.912+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:14:32.909+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:14:32.913+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:14:32.963+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.087 seconds
+[2025-09-02T16:15:03.529+0000] {processor.py:157} INFO - Started process (PID=279) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:15:03.530+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:15:03.531+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:15:03.531+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:15:03.541+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:15:03.538+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:15:03.542+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:15:03.602+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.078 seconds
+[2025-09-02T16:15:34.385+0000] {processor.py:157} INFO - Started process (PID=339) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:15:34.386+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:15:34.389+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:15:34.387+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:15:34.407+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:15:34.404+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:15:34.408+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:15:34.488+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.109 seconds
+[2025-09-02T16:16:04.536+0000] {processor.py:157} INFO - Started process (PID=399) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:16:04.537+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:16:04.540+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:16:04.538+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:16:04.551+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:16:04.548+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:16:04.552+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:16:04.605+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.076 seconds
+[2025-09-02T16:16:35.449+0000] {processor.py:157} INFO - Started process (PID=466) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:16:35.453+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:16:35.456+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:16:35.455+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:16:35.465+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:16:35.462+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:16:35.465+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:16:35.539+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.095 seconds
+[2025-09-02T16:17:05.589+0000] {processor.py:157} INFO - Started process (PID=526) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:17:05.591+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:17:05.595+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:17:05.592+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:17:05.609+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:17:05.606+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:17:05.610+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:17:05.694+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.113 seconds
+[2025-09-02T16:17:36.225+0000] {processor.py:157} INFO - Started process (PID=586) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:17:36.229+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:17:36.239+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:17:36.234+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:17:36.272+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:17:36.265+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:17:36.272+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:17:36.329+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.131 seconds
+[2025-09-02T16:18:06.915+0000] {processor.py:157} INFO - Started process (PID=646) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:18:06.916+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:18:06.917+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:18:06.916+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:18:06.921+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:18:06.920+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:18:06.922+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:18:06.944+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.033 seconds
+[2025-09-02T16:18:37.162+0000] {processor.py:157} INFO - Started process (PID=706) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:18:37.163+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:18:37.164+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:18:37.164+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:18:37.170+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:18:37.168+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:18:37.171+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:18:37.202+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.044 seconds
+[2025-09-02T16:19:07.540+0000] {processor.py:157} INFO - Started process (PID=766) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:19:07.541+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:19:07.542+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:19:07.542+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:19:07.550+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:19:07.547+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:19:07.550+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:19:07.582+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.049 seconds
+[2025-09-02T16:19:37.704+0000] {processor.py:157} INFO - Started process (PID=826) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:19:37.705+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:19:37.706+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:19:37.706+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:19:37.716+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:19:37.712+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:19:37.716+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:19:37.747+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.048 seconds
+[2025-09-02T16:20:08.370+0000] {processor.py:157} INFO - Started process (PID=886) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:20:08.372+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:20:08.373+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:20:08.373+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:20:08.381+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:20:08.377+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:20:08.381+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:20:08.421+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.057 seconds
+[2025-09-02T16:20:39.228+0000] {processor.py:157} INFO - Started process (PID=946) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:20:39.230+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:20:39.232+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:20:39.231+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:20:39.240+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:20:39.237+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:20:39.241+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:20:39.281+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.059 seconds
+[2025-09-02T16:21:09.526+0000] {processor.py:157} INFO - Started process (PID=1006) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:21:09.528+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:21:09.530+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:21:09.529+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:21:09.536+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:21:09.534+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:21:09.537+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:21:09.569+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.048 seconds
+[2025-09-02T16:21:39.615+0000] {processor.py:157} INFO - Started process (PID=1066) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:21:39.616+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:21:39.617+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:21:39.617+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:21:39.629+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:21:39.627+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:21:39.629+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:21:39.682+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.072 seconds
+[2025-09-02T16:22:10.203+0000] {processor.py:157} INFO - Started process (PID=1126) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:22:10.204+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:22:10.206+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:22:10.205+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:22:10.213+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:22:10.210+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:22:10.213+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:22:10.245+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.049 seconds
+[2025-09-02T16:22:40.548+0000] {processor.py:157} INFO - Started process (PID=1186) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:22:40.551+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:22:40.554+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:22:40.553+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:22:40.564+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:22:40.562+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:22:40.565+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:22:40.595+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.057 seconds
+[2025-09-02T16:23:11.025+0000] {processor.py:157} INFO - Started process (PID=1246) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:23:11.028+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:23:11.030+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:23:11.029+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:23:11.035+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:23:11.034+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:23:11.036+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:23:11.062+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.042 seconds
+[2025-09-02T16:23:41.634+0000] {processor.py:157} INFO - Started process (PID=1306) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:23:41.636+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:23:41.637+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:23:41.637+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:23:41.647+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:23:41.643+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:23:41.648+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:23:41.692+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.062 seconds
+[2025-09-02T16:24:11.900+0000] {processor.py:157} INFO - Started process (PID=1366) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:24:11.901+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:24:11.903+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:24:11.902+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:24:11.910+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:24:11.908+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:24:11.911+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:24:11.946+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.051 seconds
+[2025-09-02T16:26:18.844+0000] {processor.py:157} INFO - Started process (PID=53) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:26:18.847+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:26:18.855+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:26:18.852+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:26:18.935+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:26:18.929+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:26:18.936+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:26:19.111+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.286 seconds
+[2025-09-02T16:26:49.676+0000] {processor.py:157} INFO - Started process (PID=112) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:26:49.680+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:26:49.683+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:26:49.682+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:26:49.711+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:26:49.701+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:26:49.715+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:26:49.776+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.142 seconds
+[2025-09-02T16:27:20.123+0000] {processor.py:157} INFO - Started process (PID=172) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:27:20.126+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:27:20.127+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:27:20.127+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:27:20.133+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:27:20.131+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:27:20.134+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:27:20.160+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.041 seconds
+[2025-09-02T16:27:50.261+0000] {processor.py:157} INFO - Started process (PID=232) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:27:50.264+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:27:50.268+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:27:50.267+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:27:50.275+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:27:50.272+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:27:50.276+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:27:50.317+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.068 seconds
+[2025-09-02T16:28:20.625+0000] {processor.py:157} INFO - Started process (PID=291) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:28:20.627+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:28:20.628+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:28:20.627+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:28:20.634+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:28:20.632+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:28:20.635+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:28:20.675+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.055 seconds
+[2025-09-02T16:28:51.057+0000] {processor.py:157} INFO - Started process (PID=351) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:28:51.059+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:28:51.062+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:28:51.061+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:28:51.069+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:28:51.067+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:28:51.070+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:28:51.103+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.053 seconds
+[2025-09-02T16:29:21.398+0000] {processor.py:157} INFO - Started process (PID=411) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:29:21.402+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:29:21.422+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:29:21.421+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:29:21.429+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:29:21.427+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:29:21.430+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:29:21.468+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.082 seconds
+[2025-09-02T16:29:51.818+0000] {processor.py:157} INFO - Started process (PID=471) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:29:51.822+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:29:51.836+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:29:51.828+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:29:51.859+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:29:51.854+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:29:51.864+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:29:51.943+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.136 seconds
+[2025-09-02T16:30:22.521+0000] {processor.py:157} INFO - Started process (PID=532) to work on /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:30:22.523+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/clicks_redshift_dag.py for tasks to queue
+[2025-09-02T16:30:22.524+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:30:22.524+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:30:22.531+0000] {logging_mixin.py:150} INFO - [2025-09-02T16:30:22.529+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/clicks_redshift_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/clicks_redshift_dag.py", line 5, in <module>
+    from dotenv import load_dotenv
+ModuleNotFoundError: No module named 'dotenv'
+[2025-09-02T16:30:22.533+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/clicks_redshift_dag.py
+[2025-09-02T16:30:22.553+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/clicks_redshift_dag.py took 0.037 seconds

@@ -32,36 +32,60 @@ schema = StructType([
 
 BASE = "/home/ouyassine/spark-jars"  # no spaces!
 
-jar_list=",".join([
-    f"{BASE}/spark-sql-kafka-0-10_2.12-4.0.0.jar",
-    f"{BASE}/spark-token-provider-kafka-0-10_2.12-4.0.0.jar",
-    f"{BASE}/kafka-clients-3.7.0.jar",
-    f"{BASE}/commons-pool2-2.12.0.jar",
-    f"{BASE}/hadoop-aws-3.3.6.jar",
-    f"{BASE}/aws-java-sdk-bundle-1.12.367.jar",
-    f"{BASE}/lz4-java-1.8.0.jar",
-    f"{BASE}/snappy-java-1.1.10.5.jar",
-])
-
 spark = (
     SparkSession.builder
     .appName("clicks-to-s3")
-    # put jars everywhere
-    .config("spark.jars", jar_list)
-    .config("spark.driver.extraClassPath", jar_list.replace(",", ":"))
-    .config("spark.executor.extraClassPath", jar_list.replace(",", ":"))
     .config("spark.sql.shuffle.partitions", "4")
+
+    # S3A
+    .config("spark.hadoop.fs.s3a.impl", "org.apache.hadoop.fs.s3a.S3AFileSystem")
     .config("spark.hadoop.fs.s3a.aws.credentials.provider",
             "org.apache.hadoop.fs.s3a.SimpleAWSCredentialsProvider")
-    .config("spark.hadoop.fs.s3a.endpoint", f"s3.{AWS_REGION}.amazonaws.com")
+
+    # ✅ Force correct region; DO NOT set endpoint from env
+    .config("spark.hadoop.fs.s3a.region", "us-east-1")
+    .config("spark.hadoop.fs.s3a.bucket.rcml-clicks.region", "us-east-1")
+
+    # Optional: explicitly set the regional endpoint (either keep this, or omit it)
+    .config("spark.hadoop.fs.s3a.endpoint", "s3.us-east-1.amazonaws.com")
+
+    # If you previously set any timeouts/YARN overrides, keep those too
+    .config("spark.hadoop.fs.s3a.connection.timeout", "60000")
+    .config("spark.hadoop.fs.s3a.connection.establish.timeout", "60000")
+    .config("spark.hadoop.fs.s3a.retry.interval", "1000")
+    .config("spark.hadoop.fs.s3a.threads.keepalivetime", "60")
+    .config("spark.hadoop.yarn.router.subcluster.cleaner.interval.time", "60000")
+    .config("spark.hadoop.yarn.resourcemanager.delegation-token-renewer.thread-retry-interval", "60000")
+    .config("spark.hadoop.yarn.resourcemanager.delegation-token-renewer.thread-timeout", "60000")
+    .config("spark.hadoop.yarn.resourcemanager.delegation-token.max-lifetime", "86400000")
+    .config("spark.hadoop.yarn.resourcemanager.delegation-token.renew-interval", "86400000")
     .getOrCreate()
 )
 
-# sanity check – will raise if kafka provider isn't on classpath
-_ = spark._jvm.org.apache.spark.sql.kafka010.KafkaSourceProvider
+hconf = spark._jsc.hadoopConfiguration()
+it = hconf.iterator()
+to_fix = []
+while it.hasNext():
+    e = it.next()
+    val = str(e.getValue())
+    if val.endswith(("s","m","h")) and any(t in val for t in ("60s","24h")):
+        to_fix.append(e.getKey())
 
-print("Kafka provider:", spark._jvm.org.apache.spark.sql.kafka010.KafkaSourceProvider)
+for k in to_fix:
+    v = hconf.get(k)
+    if v == "60s":
+        hconf.set(k, "60000")      # ms
+    elif v == "24h":
+        hconf.set(k, "86400000")   # ms
 
+# sanity: print any lingering duration-like values
+it = hconf.iterator()
+left = []
+while it.hasNext():
+    e = it.next()
+    if any(x in str(e.getValue()) for x in ("60s","24h")):
+        left.append((e.getKey(), e.getValue()))
+print("Still duration-form props:", left)
 
 hconf = spark.sparkContext._jsc.hadoopConfiguration()
 hconf.set("fs.s3a.access.key", AWS_ACCESS_KEY_ID)
@@ -72,17 +96,22 @@ raw = (spark.readStream.format("kafka")
        .option("kafka.bootstrap.servers", KAFKA_BOOTSTRAP)
        .option("subscribe", "clicks")
        .option("startingOffsets","earliest")
+       .option("kafkaConsumer.pollTimeoutMs", "60000")
+       .option("fetchOffset.retryIntervalMs", "1000")
        .load())
 
 
-parsed = (raw.selectExpr("CAST(value AS STRING) as json_str")
-            .select(from_json(col("json_str"), schema).alias("d"))
-            .select("d.*")
-            .withColumn("event_time", to_timestamp("event_ts"))
-            .withColumn("dt", col("event_time").cast("date")))
+parsed = (
+  raw.selectExpr("CAST(value AS STRING) as json_str")
+     .select(from_json(col("json_str"), schema).alias("d"))
+     .select("d.*")
+     .withColumn("event_ts", to_timestamp("event_ts"))  # <- cast to timestamp
+     .withColumn("event_time", col("event_ts"))
+     .withColumn("dt", col("event_ts").cast("date"))
+)
 
 (
- parsed.writeStream
+parsed.writeStream
  .format("parquet")                          # simple Parquet bronze
  .option("path", f"s3a://{S3_BUCKET}/bronze/clicks/")
  .option("checkpointLocation", f"s3a://{S3_BUCKET}/chk/bronze/clicks/")
