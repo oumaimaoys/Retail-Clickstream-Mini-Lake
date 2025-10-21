@@ -102,6 +102,38 @@ services:
           timeout: 10s
           retries: 5
 
+    postgres:
+      image: postgres:13
+      environment:
+        POSTGRES_USER: postgres
+        POSTGRES_PASSWORD: postgres
+        POSTGRES_DB: postgres
+      volumes:
+        - postgres-db-volume:/var/lib/postgresql/data
+      healthcheck:
+        test: ["CMD", "pg_isready", "-U", "postgres"]
+        interval: 10s
+        retries: 5
+        start_period: 5s
+      restart: always
+      networks:
+        - confluent
+    superset:
+        image: my-superset
+        container_name: superset
+        ports:
+          - "8088:8088"
+        environment:
+          SUPERSET_SECRET_KEY: ${SUPERSET_SECRET_KEY}
+        depends_on:
+          - postgres   # uses same DB if you want, or you can add a dedicated metadata DB
+        volumes:
+          - superset_home:/app/superset_home
+        networks:
+          - confluent
+volumes:
+  postgres-db-volume:
+  superset_home:
 networks:
   confluent:
     driver: bridge
